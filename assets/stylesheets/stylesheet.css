@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import './common.css';
+@import './layout.css';
+@import './central.css';
+@import './board.css';
+@import './tab.css';
+
+/*
+  Class name is start with 'new-jebid-'.
+  All codes below shown is published by JCORPORATIONTECH
+  Date : 2018.04.11
+  Author: JCORP.
+  Email : j.lee@jcorporationtech.com
+*/
+
+/* font settings */
+@font-face {
+  font-family: 'KoPubDotum Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.eot');
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.eot?#iefix') format('embedded-opentype'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.woff') format('woff'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KoPubDotum Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Medium.eot');
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Medium.eot?#iefix') format('embedded-opentype'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Medium.woff') format('woff'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KoPubDotum Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.eot');
+  src: url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.eot?#iefix') format('embedded-opentype'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.woff') format('woff'),
+  url('http://cdn.jsdelivr.net/font-kopub/1.0/KoPubDotum-Bold.ttf') format('truetype');
+}
+
+.new-jebid-body{
+  font-family: 'KoPubDotum Medium', Dotum, monospace, sans-serif;
+  color: #373737;
+  background: #f9f9f9;
+}
+
+/* start common class */
+.new-jebid-ft-light{
+  font-family: 'KoPubDotum Light';
+}
+
+.new-jebid-ft-bold{
+  font-family: 'KoPubDotum Bold';
+}
+
+.new-jebid-setMaxWidth__common {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.new-jebid-clearfix:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+/*.new-jebid-main-color{*/
+  /*color: #2066b4;*/
+/*}*/
+
+/* end common class */
+
+/* start layout */
+.new-jebid-header{
+  position: relative;
+  background:#fff url('../images/bg_header.gif') repeat-x 0 bottom;
+}
+
+.new-jebid-header-inner{
+  position: relative;
+  height: 91px;
+}
+
+.new-jebid-logo{
+  position: absolute;
+  bottom: 22px;
+  left: 50px;
+}
+
+.new-jebid-left-area{
+  width: 269px;
+  float: left;
+}
+
+.new-jebid-content-section{
+  width: 545px;
+  float: left;
+  margin: 0 8px;
+}
+
+.new-jebid-aside-article{
+  width: 269px;
+  float: left;
+}
+
+.new-jebid-submenu-bg{
+  position: absolute;
+  top: 91px;
+  left: 0;
+  width: 100%;
+  height: 37px;
+  background: #fff;
+  display: none;
+}
+
+.new-jebid-contents{
+  margin-top: 37px;
+}
+
+.new-jebid-nav{
+  position: absolute;
+  width: 740px;
+  top: 52px;
+  left: 50%;
+  margin-left: -221px;
+}
+
+.new-jebid-nav-wrp{
+  position: relative;
+}
+
+.new-jebid-nav-list{
+  float: left;
+  margin-right: 60px;
+  text-align: center;
+}
+
+
+.new-jebid-nav-list:last-child{
+  margin-right: 0;
+}
+
+.new-jebid-nav-link{
+  font-size: 16px;
+  font-weight: bold;
+  color: #373737;
+  padding-bottom: 21px;
+}
+
+.new-jebid-nav-link:hover,
+.new-jebid-nav__active{
+  color: #2066b4;
+}
+
+.new-jebid-nav:hover + .new-jebid-submenu-bg{
+  display: block;
+}
+
+.new-jebid-submenu-bg:hover{
+  display: block;
+}
+
+
+.new-jebid-nav-sub-list-wrp{
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+  display: none;
+}
+
+.new-jebid-nav-sub-link{
+  height: 37px;
+  line-height: 37px;
+  display: inline-block;
+
+}
+
+.new-jebid-nav-list:hover > .new-jebid-nav-sub-list-wrp{
+  display: block !important;
+}
+
+.new-jebid-nav-sub-list{
+  float: left;
+  margin-right: 25px;
+}
+
+.new-jebid-nav-sub-list:last-child{
+  margin-right: 0;
+}
+
+.new-jebid-nav-sub-link{
+  font-size: 15px;
+  font-weight: bold;
+  color: #545454;
+}
+
+
+.new-jebid-nav-sub-link:hover,
+.new-jebid-nav__active{
+  color: #2066b4;
+}
+
+.new-jebid-nav-list:nth-child(2) .new-jebid-nav-sub-list-wrp{
+  padding-left: 115px;
+}
+
+.new-jebid-nav-list:nth-child(3) .new-jebid-nav-sub-list-wrp{
+  padding-left: 234px;
+}
+
+.new-jebid-nav-list:nth-child(4) .new-jebid-nav-sub-list-wrp{
+  padding-left: 335px;
+}
+
+.new-jebid-nav-list:nth-child(5) .new-jebid-nav-sub-list-wrp{
+  padding-left: 85px;
+}
+
+.new-jebid-nav-list:nth-child(6) .new-jebid-nav-sub-list-wrp{
+  padding-left: 272px;
+}
+
+.new-jebid-nav-list:nth-child(7) .new-jebid-nav-sub-list-wrp{
+  padding-left: 307px;
+}
+
+
+/* end layout */
+
+
