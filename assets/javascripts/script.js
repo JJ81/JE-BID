@@ -18,7 +18,7 @@
 		$('.new-jebid-notice-tab-0'+parseInt(idx+1,10)).removeClass(blindClassName);
 	});
 	
-	// follow up page scroll
+	// Follow up page scroll
 	var
 		subpageContents = $('.new-jebid-subpage-contents'),
 		subLeftArea = $('.new-jebid-sub-left-area');
@@ -34,12 +34,31 @@
 			subpageContents.removeClass('new-jebid-left-area-active');
 			subLeftArea.removeClass('new-jebid-fixed-left');
 		}
-		
 	});
 	
 	
 	function getCurrentScrollTop(){
 		return $(win).scrollTop();
 	}
+	
+	function addFavorite() {
+		if(win.external.AddFavorite){
+			win.external.AddFavorite('http://www.naver.com/', '네이버'); // 수정할 것
+		}else{
+			alert('사용하시는 브라우저는 본 기능을 지원하지 않습니다. 수동으로 설정해주세요.');
+		}
+	}
+	
+	function setHomePage(){
+		if(document.body.setHomePage){
+			document.body.style.behavior='url(#default#homepage)';
+			document.body.setHomePage('http://www.naver.com/');
+		} else {
+			alert('사용하시는 브라우저는 본 기능을 지원하지 않습니다. 수동으로 설정해주세요.');
+		}
+	}
+	
+	$('.new-jebid-link-fave').bind('click', addFavorite);
+	$('.new-jebid-link-start').bind('click', setHomePage);
 
 }(jQuery, window));
