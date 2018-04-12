@@ -582,7 +582,8 @@ label[for="new-jebid-check-store-id"]{
 /* main contents start */
 .new-jebid-success-bid{
   border: 1px solid #189bd7;
-  height: 41px;
+  /*height: 41px;*/
+  height: 21px;
 }
 
 .new-jebid-bid-title{
@@ -590,7 +591,7 @@ label[for="new-jebid-check-store-id"]{
   width: 129px;
   text-align: center;
   font-size: 14px;
-  line-height: 41px;
+  line-height: 21px;
   color: #fff;
   background: #21a5e6;
 }
@@ -598,8 +599,8 @@ label[for="new-jebid-check-store-id"]{
 .new-jebid-marquee-area{
   float: left;
   width: 388px;
-  height: 41px;
-  line-height: 41px;
+  height: 21px;
+  line-height: 21px;
   background :#ebebeb;
   color: #4e4e4e;
   font-size: 13px;
@@ -614,12 +615,13 @@ label[for="new-jebid-check-store-id"]{
 .new-jebid-bid-btn-more{
   display: block;
   width: 26px;
-  height: 41px;
+  /*height: 41px;*/
+  height: 21px;
   background: #189bd7;
   color: #fff;
   font-size: 20px;
   text-align: center;
-  line-height: 41px;
+  line-height: 21px;
 }
 
 .new-jebid-bid-btn-more:hover{
@@ -638,8 +640,9 @@ label[for="new-jebid-check-store-id"]{
 }
 
 .new-jebid-notice-title{
-  height: 36px;
-  line-height: 36px;
+  height: 24px;
+  /*height: 36px;*/
+  line-height: 24px;
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -672,6 +675,7 @@ label[for="new-jebid-check-store-id"]{
   padding-left: 9px;
   margin-bottom: 11px;
   background: url('../images/bl_square_grey.jpg') no-repeat 0 center;
+  width: 500px;
 }
 
 .new-jebid-notice-link{
@@ -688,11 +692,12 @@ label[for="new-jebid-check-store-id"]{
 }
 
 .new-jebid-notice-board{
-  height: 379px;
+  height: 427px;
 }
 
 .new-jebid-multi-notice-tab-wrp{
-  height: 40px;
+  height: 24px;
+  /*height: 40px;*/
   width: 520px;
 }
 
@@ -700,7 +705,7 @@ label[for="new-jebid-check-store-id"]{
   float: left;
   width: 126px;
   padding-right: 3px;
-  line-height: 40px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -708,7 +713,7 @@ label[for="new-jebid-check-store-id"]{
   background: #b8bec7;
   text-align: center;
   display: block;
-  line-height: 40px;
+  line-height: 24px;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
